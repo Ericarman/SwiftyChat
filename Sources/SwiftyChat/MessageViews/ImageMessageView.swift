@@ -8,6 +8,7 @@
 import Kingfisher
 import SwiftUI
 
+@MainActor
 struct ImageLoadingKindCell: View {
 
     private let imageLoadingType: ImageLoadingKind
@@ -63,6 +64,7 @@ struct ImageLoadingKindCell: View {
     }
 }
 
+@MainActor
 struct ImageMessageView<Message: ChatMessage>: View {
 
     let message: Message

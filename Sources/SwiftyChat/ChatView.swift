@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftUIEKtensions
 
+@MainActor
 public struct ChatView<Message: ChatMessage, User: ChatUser>: View {
 
     @Binding private var messages: [Message]

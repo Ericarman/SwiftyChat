@@ -18,6 +18,7 @@ public struct ContactCellButton: Identifiable {
     }
 }
 
+@MainActor
 struct ContactMessageView<Message: ChatMessage>: View {
 
     let contact: ContactItem

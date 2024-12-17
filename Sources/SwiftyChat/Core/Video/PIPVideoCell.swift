@@ -14,6 +14,7 @@ private extension CGSize {
     var midY: CGFloat { height / 2 }
 }
 
+@MainActor
 struct PIPVideoCell<Message: ChatMessage>: View {
 
     @EnvironmentObject var videoManager: VideoManager<Message>

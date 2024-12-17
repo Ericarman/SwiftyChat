@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 public struct BasicInputView: View {
 
     @Binding private var message: String

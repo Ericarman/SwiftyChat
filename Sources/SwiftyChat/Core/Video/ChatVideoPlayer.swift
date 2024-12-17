@@ -3,6 +3,7 @@ import AVKit
 import SwiftUI
 
 #if os(iOS)
+@MainActor
 struct IOSChatVideoPlayer<Message: ChatMessage>: View {
     @StateObject private var playerVM = PlayerViewModel()
     let media: VideoItem
@@ -40,6 +41,7 @@ struct IOSChatVideoPlayer<Message: ChatMessage>: View {
 #endif
 
 // TODO: - Works for iOS as well but overlay is problematic currently
+@MainActor
 struct MacOSChatVideoPlayer<Message: ChatMessage>: View {
     @StateObject private var playerVM = PlayerViewModel()
     let media: VideoItem

@@ -8,6 +8,7 @@
 import Combine
 import SwiftUI
 
+@MainActor
 struct LoadingThreeBalls: View {
 
     let timer: Publishers.Autoconnect<Timer.TimerPublisher>

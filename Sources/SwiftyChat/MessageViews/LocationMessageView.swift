@@ -8,6 +8,7 @@
 import MapKit
 import SwiftUI
 
+@MainActor
 struct LocationMessageView<Message: ChatMessage>: View {
 
     let location: LocationItem

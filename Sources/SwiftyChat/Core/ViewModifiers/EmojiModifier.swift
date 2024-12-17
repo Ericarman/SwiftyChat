@@ -8,6 +8,7 @@
 import SwiftUI
 
 /// Modifies text font if contains emoji
+@MainActor
 struct EmojiModifier: ViewModifier {
 
     let text: String

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 struct ChatListView: View {
     var body: some View {
         NavigationView {

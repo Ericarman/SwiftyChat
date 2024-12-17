@@ -8,6 +8,7 @@
 import SwiftUI
 import WrappingHStack
 
+@MainActor
 struct QuickReplyMessageView: View {
 
     var quickReplies: [QuickReplyItem]

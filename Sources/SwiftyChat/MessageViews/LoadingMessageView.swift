@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 struct LoadingMessageView<Message: ChatMessage>: View {
 
     let message: Message

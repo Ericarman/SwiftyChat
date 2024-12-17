@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftyChat
 import SwiftyChatMock
 
+@MainActor
 struct AdvancedExampleView: View {
 
     @State var messages: [MessageMocker.ChatMessageItem] = []
@@ -108,6 +109,7 @@ struct AdvancedExampleView: View {
     }
 }
 
+@MainActor
 struct CustomExampleChatCell: View {
     var anyParam: Any
 

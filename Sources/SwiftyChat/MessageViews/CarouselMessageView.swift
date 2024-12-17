@@ -27,6 +27,7 @@ private extension CarouselItem {
     }
 }
 
+@MainActor
 struct CarouselMessageView<Message: ChatMessage>: View {
 
     let carouselItems: [CarouselItem]
@@ -51,6 +52,7 @@ struct CarouselMessageView<Message: ChatMessage>: View {
     }
 }
 
+@MainActor
 private struct CarouselItemView: View {
 
     let item: CarouselItem

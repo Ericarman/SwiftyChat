@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 struct MessageViewEdgeInsetsModifier: ViewModifier {
 
     let isSender: Bool

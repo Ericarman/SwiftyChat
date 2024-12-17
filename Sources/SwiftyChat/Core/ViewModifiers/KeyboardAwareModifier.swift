@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftUIEKtensions
 
+@MainActor
 extension View {
     /// iOS only modifier to add necessary padding according to keyboard height
     func keyboardAwarePadding() -> some View {
@@ -19,6 +20,7 @@ extension View {
     }
 }
 
+@MainActor
 struct KeyboardAwareModifier: ViewModifier {
     @State private var keyboardHeight: CGFloat = .zero
 

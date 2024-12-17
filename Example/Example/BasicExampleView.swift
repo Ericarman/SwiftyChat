@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftyChat
 import SwiftyChatMock
 
+@MainActor
 struct BasicExampleView: View {
 
     @State var messages: [MessageMocker.ChatMessageItem] = MessageMocker.generate(kind: .text, count: 20)

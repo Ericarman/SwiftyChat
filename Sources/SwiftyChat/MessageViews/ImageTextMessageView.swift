@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@MainActor
 struct ImageTextMessageView<Message: ChatMessage>: View {
 
     let message: Message

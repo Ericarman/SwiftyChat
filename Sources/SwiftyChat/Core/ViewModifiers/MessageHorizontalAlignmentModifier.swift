@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 struct MessageHorizontalAlignmentModifier: ViewModifier {
 
     let messageKind: ChatMessageKind

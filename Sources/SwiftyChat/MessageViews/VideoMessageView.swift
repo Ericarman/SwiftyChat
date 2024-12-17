@@ -8,6 +8,7 @@ import SwiftUI
 
 /// When play button is tapped, it lets videoManager know about VideoItem
 /// So manager knows when to display actual videoPlayer above `ChatView`
+@MainActor
 struct VideoMessageView<Message: ChatMessage>: View {
 
     let media: VideoItem

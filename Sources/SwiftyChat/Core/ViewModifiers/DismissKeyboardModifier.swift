@@ -7,12 +7,14 @@
 
 import SwiftUI
 
+@MainActor
 extension View {
     func dismissKeyboardOnTappingOutside() -> some View {
         modifier(DismissKeyboardOnTappingOutside())
     }
 }
 
+@MainActor
 struct DismissKeyboardOnTappingOutside: ViewModifier {
     func body(content: Content) -> some View {
         content

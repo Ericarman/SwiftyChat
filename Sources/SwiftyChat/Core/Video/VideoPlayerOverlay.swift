@@ -1,5 +1,6 @@
 import SwiftUI
 
+@MainActor
 struct VideoPlayerOverlay<Message: ChatMessage>: View {
     @ObservedObject
     var playerVM: PlayerViewModel

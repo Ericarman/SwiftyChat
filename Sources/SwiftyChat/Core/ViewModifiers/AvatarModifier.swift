@@ -8,6 +8,7 @@
 import SwiftUI
 import Kingfisher
 
+@MainActor
 struct AvatarModifier<Message: ChatMessage>: ViewModifier {
 
     let message: Message
